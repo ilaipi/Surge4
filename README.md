@@ -5,6 +5,12 @@ copy from [nzw9314/Surge](https://github.com/nzw9314/Surge/blob/master/Surge_Bas
 使用的时候需要把订阅地址改成自己的。
 
 
+## 安装模块
+- Modules/cron.sgmodule
+- Modules/cookie.sgmodule
+- [nzw9314/Script_ALL_in_one](https://raw.githubusercontent.com/nzw9314/Surge/master/Module/Script_All_in_one.sgmodule)
+
+
 ## 免责声明：
 - ilaipi发布的Script项目中涉及的任何解锁和解密分析脚本仅用于资源共享和学习研究，不能保证其合法性，准确性，完整性和有效性，请根据情况自行判断.
 

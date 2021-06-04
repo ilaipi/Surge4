@@ -4,6 +4,28 @@ copy from [nzw9314/Surge](https://github.com/nzw9314/Surge/blob/master/Surge_Bas
 
 使用的时候需要把订阅地址改成自己的。
 
+现在仓库配合Github Actions，可以输出替换后的配置。在Settings中设置`YOUR_SUB_URL1`，`YOUR_SUB_URL2`，`YOUR_SUB_URL3`，`YOUR_SUB_URL4`，`YOUR_SUB_URL5`，
+可以全部设置相同的值，也可以根据个人情况设置为多个值。
+
+```
+[Proxy Group]
+🔰 节点选择 = select, ♻️ 延迟最低, 🟢 故障切换, 🔘 手动选择, 🔁负载均衡
+🖥 Netflix = select, policy-path=YOUR_SUB_URL1
+🎵 TikTok = select, 🔰 节点选择, 🎯 直接连接
+📹 YouTube = select, 🔰 节点选择, 🎯 直接连接
+🔞 Pornhub = select, 🔰 节点选择, 🎯 直接连接
+💻 Telegram = select, 🔰 节点选择, 🎯 直接连接
+🏎️ Speedtest = select, 🔰 节点选择, 🎯 直接连接
+💳 PayPal = select, 🔘 手动选择, 🎯 直接连接
+🎧 网易云音乐 = select, 🎧, 🎯 直接连接
+📱 苹果服务 = select, 🎯 直接连接, 🔰 节点选择
+🐳 漏网之鱼 = select, 🔰 节点选择, 🎯 直接连接
+🔘 手动选择 = select, policy-path=YOUR_SUB_URL2
+♻️ 延迟最低 = url-test, policy-path=YOUR_SUB_URL3, url=http://www.gstatic.com/generate_204, interval=600, tolerance=50
+🟢 故障切换 = fallback, policy-path=YOUR_SUB_URL4, url=http://www.gstatic.com/generate_204, interval=600, tolerance=50
+🔁负载均衡 = load-balance, persistent=1, policy-path=YOUR_SUB_URL5, update-interval=0
+```
+
 
 ## 安装模块
 - Modules/cron.sgmodule

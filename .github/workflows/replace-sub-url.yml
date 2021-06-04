@@ -33,4 +33,4 @@ jobs:
           # Files, comma-separated. Supposed PLACEHOLDER in them
           files: surge4.conf
           # Comma-separated pairs PLACEHOLDER=value
-          replacements: YOUR_SUB_URL=${{ secrets.SUB_URL }}
+          replacements: YOUR_SUB_URL1=${{ secrets.SUB_URL1 }},YOUR_SUB_URL2=${{ secrets.SUB_URL2 }},YOUR_SUB_URL3=${{ secrets.SUB_URL3 }},YOUR_SUB_URL4=${{ secrets.SUB_URL4 }},YOUR_SUB_URL5=${{ secrets.SUB_URL5 }}

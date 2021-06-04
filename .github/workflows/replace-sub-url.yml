@@ -25,18 +25,14 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
 
-      # Runs a single command using the runners shell
-      - name: Run a one-line script
-        run: echo Hello, world!
-
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
         run: |
           cp surge4.conf surge4.conf.temp
-          sed -i 's/YOUR_SUB_URL1/${{ secrets.SUB_URL1 }}/' surge4.conf.temp
-          sed -i 's/YOUR_SUB_URL2/${{ secrets.SUB_URL2 }}/' surge4.conf.temp
-          sed -i 's/YOUR_SUB_URL3/${{ secrets.SUB_URL3 }}/' surge4.conf.temp
-          sed -i 's/YOUR_SUB_URL4/${{ secrets.SUB_URL4 }}/' surge4.conf.temp
-          sed -i 's/YOUR_SUB_URL5/${{ secrets.SUB_URL5 }}/' surge4.conf.temp
+          sed -i 's|YOUR_SUB_URL1|${{ secrets.SUB_URL1 }}|' surge4.conf.temp
+          sed -i 's|YOUR_SUB_URL2|${{ secrets.SUB_URL2 }}|' surge4.conf.temp
+          sed -i 's|YOUR_SUB_URL3|${{ secrets.SUB_URL3 }}|' surge4.conf.temp
+          sed -i 's|YOUR_SUB_URL4|${{ secrets.SUB_URL4 }}|' surge4.conf.temp
+          sed -i 's|YOUR_SUB_URL5|${{ secrets.SUB_URL5 }}|' surge4.conf.temp
           cat surge4.conf.temp
           rm -f surge4.conf.temp

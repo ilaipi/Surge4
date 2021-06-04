@@ -4,7 +4,7 @@ copy from [nzw9314/Surge](https://github.com/nzw9314/Surge/blob/master/Surge_Bas
 
 使用的时候需要把订阅地址改成自己的。
 
-现在仓库配合Github Actions，可以输出替换后的配置。在Settings中设置`YOUR_SUB_URL1`，`YOUR_SUB_URL2`，`YOUR_SUB_URL3`，`YOUR_SUB_URL4`，`YOUR_SUB_URL5`，
+现在仓库配合Github Actions，可以输出替换后的配置。在`Settings-Secrets`中设置`SUB_URL1`，`SUB_URL2`，`SUB_URL3`，`SUB_URL4`，`SUB_URL5`，
 可以全部设置相同的值，也可以根据个人情况设置为多个值。
 
 ```
